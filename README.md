@@ -52,8 +52,7 @@ Our POS system streamlines sales and inventory management. It features a **Dashb
 ## 🎥 Demo
 You can browse the live demo of the POS system in Laravel & React at the following link:
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-%230077B5?style=for-the-badge&logo=google-chrome&logoColor=white)]
-(https://qpos.qtecsolution.com/login/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-%230077B5?style=for-the-badge&logo=google-chrome&logoColor=white)](https://qpos.qtecsolution.com/login/)
 
 ### Dashboard:
 
