@@ -1,0 +1,129 @@
+📦 Installation
+Welcome to the setup guide for the POS system in Laravel & React. This document provides comprehensive steps to install, configure, and run the project in your local environment, using both Docker and a native setup. Follow these instructions to ensure proper configuration.
+
+📝 Prerequisites
+Please ensure you have the following installed on your system:
+
+PHP (version 8.2 or higher)
+Composer
+npm
+MySQL (version 8.0 or compatible, e.g., MariaDB)
+Git
+XAMPP or WAMP (optional, for an all-in-one local server environment)
+📈 Server Requirements
+This application requires a server with the following specifications:
+
+PHP (version 8.2 or higher) with the extensions:
+BCMath
+Ctype
+Fileinfo
+JSON
+Mbstring
+PDO
+GD
+Zip
+PDO MySQL
+MySQL (version 8.0) or MariaDB
+Composer
+Nodejs
+Web Server: Apache or Nginx
+⚙️ Setup Options
+This guide covers two setup methods:
+
+Setting Up Locally (Without Docker)
+Using Docker
+🚀 Setup Without Docker
+1. Clone the Repository
+git clone https://github.com/qtecsolution/qpos.git
+cd qpos
+2. Install Dependencies
+Within the project directory, run:
+
+PHP Dependencies
+composer install
+Node Dependencies
+npm install
+3. Configure the Environment
+Create the .env file by copying the sample configuration:
+
+cp .env.example .env
+4. Generate Application Key
+Secure the application by generating a key:
+
+php artisan key:generate
+5. Configure Database
+You can configure the database using either the MySQL client or phpMyAdmin.
+
+Using MySQL Client:
+
+Access MySQL:
+
+mysql -u {username} -p
+Create Database:
+
+CREATE DATABASE {db_name};
+Grant User Permissions:
+
+GRANT ALL ON {db_name}.* TO '{your_username}'@'localhost' IDENTIFIED BY '{your_password}';
+Apply Changes and Exit:
+
+FLUSH PRIVILEGES;
+EXIT;
+Update .env Database Settings:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE={db_name}
+DB_USERNAME={your_username}
+DB_PASSWORD={your_password}
+Using phpMyAdmin:
+
+Access phpMyAdmin and log in with your credentials.
+
+Create Database:
+
+Go to the "Databases" tab.
+Enter {db_name} in the "Create database" field.
+Click "Create".
+Create User and Grant Permissions (If Needed):
+You can either use the root user or create a new user.
+To create a new user, go to the "User accounts" tab.
+Click "Add user account".
+Fill in the "User name" and "Password" fields.
+Under "Database for user", select "Create database with same name and grant all privileges".
+Click "Go".
+Update .env Database Settings:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE={db_name}
+DB_USERNAME={your_username}
+DB_PASSWORD={your_password}
+6. Run Migrations and Seed Data
+To set up the database tables and populate them with initial data, run:
+
+php artisan migrate --seed
+7. Start the Development Server
+To run the application locally, execute:
+
+php artisan serve
+npm run dev
+Your application will be available at http://127.0.0.1:8000.
+
+🐳 Setup with Docker
+1. Clone the Repository
+git clone https://github.com/qtecsolution/qpos.git
+cd qpos
+2. Initialize the Project with Make Command
+Setup Project
+make setup
+Access the application at http://localhost.
+
+🛠️ Additional Information
+Seeding: The database seeder is configured to populate initial data. Run php artisan migrate --seed to use it. After running the seeder, you can log in as an admin using the following credentials:
+Email: demo123@gmail.com
+Password: demo123
+Environment Variables: Ensure all necessary environment variables are set in the .env file.
+Database Configuration: The application is configured for MySQL by default. Update the .env file as needed for other database connections.
