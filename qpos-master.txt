@@ -35,7 +35,7 @@ Using Docker
 🚀 Setup Without Docker
 1. Clone the Repository
 git clone https://github.com/fasiullah7524/Stock-Master.git
-cd Stock-Master
+cd qpos-master
 2. Install Dependencies
 Within the project directory, run:
 
@@ -115,7 +115,7 @@ Your application will be available at http://127.0.0.1:8000.
 🐳 Setup with Docker
 1. Clone the Repository
 git clone https://github.com/fasiullah7524/Stock-Master.git
-cd /Stock-Master
+cd qpos-master
 2. Initialize the Project with Make Command
 Setup Project
 make setup

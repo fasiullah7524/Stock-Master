@@ -144,7 +144,7 @@ git clone https://github.com/fasiullah7524/Stock-Master.git
 ```
 
 ```bash
-cd Stock-Master
+cd qpos-master
 ```
 
 #### 2. Install Dependencies
@@ -270,7 +270,7 @@ Your application will be available at [http://127.0.0.1:8000](http://127.0.0.1:8
 
 ```bash
 git clone https://github.com/fasiullah7524/Stock-Master.git
-cd Stock-Master
+cd qpos-master
 ```
 
 #### 2. Initialize the Project with `Make` Command
