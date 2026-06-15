@@ -127,8 +127,8 @@
                                 <button type="submit" class="create-account-btn w-100">Sign In</button>
                             </div>
                            <div class="form-group"> <br>
-                            <p><b>User:</b> demo@qtecsolution.net</p>
-                            <p><b>Password:</b> 87654321</p>
+                            <p><b>User:</b> demo123@gmail.com</p>
+                            <p><b>Password:</b> demo123</p>
                             </div> 
                         </div> 
 
