@@ -140,11 +140,11 @@ This guide covers two setup methods:
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/qtecsolution/qpos.git
+git clone https://github.com/fasiullah7524/Stock-Master.git
 ```
 
 ```bash
-cd qpos
+cd Stock-Master
 ```
 
 #### 2. Install Dependencies
@@ -269,8 +269,8 @@ Your application will be available at [http://127.0.0.1:8000](http://127.0.0.1:8
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/qtecsolution/qpos.git
-cd qpos
+git clone https://github.com/fasiullah7524/Stock-Master.git
+cd Stock-Master
 ```
 
 #### 2. Initialize the Project with `Make` Command
